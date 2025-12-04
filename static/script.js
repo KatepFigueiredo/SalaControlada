@@ -140,6 +140,7 @@ function atualizar() {
   fetch(BACKEND_URL + '/temperatura')
     .then(r => r.json())
     .then(data => {
+      console.log('Dados temperatura:', data);
       if (data && data.temperatura) {
         document.getElementById('temperatura').textContent = data.temperatura.toFixed(1);
         document.getElementById('humidade').textContent = data.humidade.toFixed(1);
