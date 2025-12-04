@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Controlo Acesso</title>
+    <link rel="stylesheet" href="static/style.css" />
+  </head>
+  <body>
+    <h1>Controlo de Acesso</h1>
+
+    <h2>RFID</h2>
+    <p><em>Aproxima um cartão RFID ao leitor...</em></p>
+
+    <h2>Controlo de Porta</h2>
+    <button onclick="ativarSaida()" class="btn-saida">Botão de Saída</button>
+
+    <h2>Ocupação</h2>
+    <p>Pessoas: <span id="ocupacao-atual">0</span> / 3</p>
+    <p>Livres: <span id="lugares-disponiveis">3</span></p>
+
+    <h2>Temperatura</h2>
+    <p>Temp: <span id="temperatura">--</span> °C</p>
+    <p>Hum: <span id="humidade">--</span> %</p>
+
+    <h2>Log</h2>
+    <div id="log" class="log-box">
+      <p>[Iniciado]</p>
+    </div>
+
+    <button onclick="limparLog()" class="btn-limpar">Limpar Log</button>
+
+    <script src="static/config.js"></script>
+    <script src="static/script.js"></script>
+  </body>
+</html>
