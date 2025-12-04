@@ -4,7 +4,7 @@
 
 const BACKEND_URL = window.location.hostname === 'localhost' 
   ? "http://localhost:5000"           // Desenvolvimento
-  : "http://192.168.68.55:5000";       // Produção (Vercel)
+  : "https://backend-sala-controlada.onrender.com";       // Produção (Vercel)
 
 console.log("Backend URL:", BACKEND_URL);
 console.log("Hostname:", window.location.hostname);
